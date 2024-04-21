@@ -34,9 +34,9 @@ export default function DiaryList({ data }) {
         <Button onClick={() => nav("/new")} text={"새 일기 쓰기"} type={"POSITIVE"} />
       </div>
       <div className="list_wrapper">
-        {sortedData.map((item) => {
-          <DiaryItem key={item.id} {...item} />;
-        })}
+        {sortedData.map((item) => (
+          <DiaryItem key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );

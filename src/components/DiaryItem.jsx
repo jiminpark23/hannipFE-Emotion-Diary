@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function DiaryItem({ id, emotionId, createdDate, content }) {
   const nav = useNavigate();
 
+  console.log(getEmotionImage(1));
   return (
     <div className="DiaryItem">
       <div onClick={() => nav(`/diary/${id}`)} className={`img_section img_section_${emotionId}`}>
