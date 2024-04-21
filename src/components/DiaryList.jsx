@@ -3,7 +3,6 @@ import DiaryItem from "./DiaryItem";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./DiaryList.css";
-import { sortUserPlugins } from "vite";
 
 export default function DiaryList({ data }) {
   const nav = useNavigate();
